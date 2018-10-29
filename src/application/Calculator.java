@@ -58,4 +58,11 @@ public class Calculator {
 		
 	}
 	
+	public double getRwithPandI(double leistung, double strom) {
+		if(strom == 0) {
+			throw new IllegalArgumentException();
+		}
+		
+		return leistung / (strom*strom);
+	}
 }
